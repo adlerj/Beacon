@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		E25BBEBD19BE7F0E001D04EC /* GROLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BBEBC19BE7F0E001D04EC /* GROLoginViewController.m */; };
 		E25BBEC119BE87DE001D04EC /* GROMyGroupsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BBEC019BE87DE001D04EC /* GROMyGroupsTableViewController.m */; };
-		E25BBEC519BE9244001D04EC /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = E25BBEC319BE9244001D04EC /* BebasNeue.otf */; };
-		E25BBEC619BE9244001D04EC /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = E25BBEC419BE9244001D04EC /* License.txt */; };
 		E25BBEC919BE934D001D04EC /* GRORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BBEC819BE934D001D04EC /* GRORootViewController.m */; };
 		E2ECC36519BB91C10058F41A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2ECC36419BB91C10058F41A /* Foundation.framework */; };
 		E2ECC36719BB91C10058F41A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2ECC36619BB91C10058F41A /* CoreGraphics.framework */; };
@@ -25,6 +23,7 @@
 		E2ECC38619BB91C10058F41A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2ECC36819BB91C10058F41A /* UIKit.framework */; };
 		E2ECC38E19BB91C10058F41A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2ECC38C19BB91C10058F41A /* InfoPlist.strings */; };
 		E2ECC39019BB91C10058F41A /* GrouPicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC38F19BB91C10058F41A /* GrouPicTests.m */; };
+		E2FCE82F19BFE91100A1949F /* GRORegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCE82E19BFE91100A1949F /* GRORegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +41,6 @@
 		E25BBEBC19BE7F0E001D04EC /* GROLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GROLoginViewController.m; path = ../GROLoginViewController.m; sourceTree = "<group>"; };
 		E25BBEBF19BE87DE001D04EC /* GROMyGroupsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GROMyGroupsTableViewController.h; path = ../GROMyGroupsTableViewController.h; sourceTree = "<group>"; };
 		E25BBEC019BE87DE001D04EC /* GROMyGroupsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GROMyGroupsTableViewController.m; path = ../GROMyGroupsTableViewController.m; sourceTree = "<group>"; };
-		E25BBEC319BE9244001D04EC /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
-		E25BBEC419BE9244001D04EC /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		E25BBEC719BE934D001D04EC /* GRORootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRORootViewController.h; sourceTree = "<group>"; };
 		E25BBEC819BE934D001D04EC /* GRORootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRORootViewController.m; sourceTree = "<group>"; };
 		E2ECC36119BB91C10058F41A /* GrouPic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrouPic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +60,8 @@
 		E2ECC38B19BB91C10058F41A /* GrouPicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrouPicTests-Info.plist"; sourceTree = "<group>"; };
 		E2ECC38D19BB91C10058F41A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E2ECC38F19BB91C10058F41A /* GrouPicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrouPicTests.m; sourceTree = "<group>"; };
+		E2FCE82D19BFE91100A1949F /* GRORegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRORegisterViewController.h; sourceTree = "<group>"; };
+		E2FCE82E19BFE91100A1949F /* GRORegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRORegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,17 +97,10 @@
 				E25BBEBC19BE7F0E001D04EC /* GROLoginViewController.m */,
 				E25BBEC719BE934D001D04EC /* GRORootViewController.h */,
 				E25BBEC819BE934D001D04EC /* GRORootViewController.m */,
+				E2FCE82D19BFE91100A1949F /* GRORegisterViewController.h */,
+				E2FCE82E19BFE91100A1949F /* GRORegisterViewController.m */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		E25BBEC219BE9244001D04EC /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				E25BBEC319BE9244001D04EC /* BebasNeue.otf */,
-				E25BBEC419BE9244001D04EC /* License.txt */,
-			);
-			path = fonts;
 			sourceTree = "<group>";
 		};
 		E2ECC35819BB91C10058F41A = {
@@ -118,7 +110,6 @@
 				E2ECC38919BB91C10058F41A /* GrouPicTests */,
 				E2ECC36319BB91C10058F41A /* Frameworks */,
 				E2ECC36219BB91C10058F41A /* Products */,
-				E25BBEC219BE9244001D04EC /* fonts */,
 			);
 			sourceTree = "<group>";
 		};
@@ -262,9 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2ECC37D19BB91C10058F41A /* Images.xcassets in Resources */,
-				E25BBEC619BE9244001D04EC /* License.txt in Resources */,
 				E2ECC36F19BB91C10058F41A /* InfoPlist.strings in Resources */,
-				E25BBEC519BE9244001D04EC /* BebasNeue.otf in Resources */,
 				E2ECC37819BB91C10058F41A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FCE82F19BFE91100A1949F /* GRORegisterViewController.m in Sources */,
 				E25BBEC919BE934D001D04EC /* GRORootViewController.m in Sources */,
 				E25BBEC119BE87DE001D04EC /* GROMyGroupsTableViewController.m in Sources */,
 				E25BBEBD19BE7F0E001D04EC /* GROLoginViewController.m in Sources */,
@@ -417,7 +407,7 @@
 				GCC_PREFIX_HEADER = "GrouPic/GrouPic-Prefix.pch";
 				INFOPLIST_FILE = "GrouPic/GrouPic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9e2e7aa4-773f-48f9-ad4b-46e6cff2762a";
+				PROVISIONING_PROFILE = "8217693f-3fad-4fda-9cdc-2e04c2393cfb";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -431,7 +421,7 @@
 				GCC_PREFIX_HEADER = "GrouPic/GrouPic-Prefix.pch";
 				INFOPLIST_FILE = "GrouPic/GrouPic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9e2e7aa4-773f-48f9-ad4b-46e6cff2762a";
+				PROVISIONING_PROFILE = "8217693f-3fad-4fda-9cdc-2e04c2393cfb";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

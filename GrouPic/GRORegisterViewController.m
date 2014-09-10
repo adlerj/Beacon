@@ -1,24 +1,21 @@
 //
-//  GROLoginViewController.m
+//  GRORegisterViewController.m
 //  GrouPic
 //
-//  Created by Jeffrey Adler on 9/8/14.
+//  Created by Jeffrey Adler on 9/9/14.
 //  Copyright (c) 2014 GrouPic, inc. All rights reserved.
 //
 
-#import "GROLoginViewController.h"
+#import "GRORegisterViewController.h"
 
-@interface GROLoginViewController () <UITextFieldDelegate>
+@interface GRORegisterViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UITextField *phone;
 
 @end
 
-@implementation GROLoginViewController
-
-- (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
-}
+@implementation GRORegisterViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,19 +33,18 @@
     self.username.returnKeyType = UIReturnKeyNext;
     self.username.delegate = self;
     
-    self.password.returnKeyType = UIReturnKeyDone;
+    self.password.returnKeyType = UIReturnKeyNext;
     self.password.delegate = self;
+    
+    self.phone.returnKeyType = UIReturnKeyDone;
+    self.phone.delegate = self;
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"registerBG_bar"]];
 }
 
-- (BOOL)loginWithUsername:(NSString*)username Password:(NSString*)password {
-    if ([[self.username.text lowercaseString] isEqual:@"jeff"] && [[self.password.text lowercaseString] isEqualToString:@"123"]) {
-        [self performSegueWithIdentifier:@"LoginSuccessfulSegue" sender:self];
-        return YES;
-    } else {
-        [[[UIAlertView alloc] initWithTitle:@"Failed Login" message:@"The username and password combination that you have entered is incorrect" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil] show];
-    }
+- (BOOL)registerWithUsername:(NSString*)username Password:(NSString*)password Phone:(NSString*)phone {
+    [[[UIAlertView alloc] initWithTitle:@"Can't Register" message:@"Feature isn't availible yet" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
+    
     return NO;
 }
 
@@ -58,10 +54,9 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)loginPressed:(UIButton *)sender {
-    [self loginWithUsername:self.username.text Password:self.password.text];
+- (IBAction)registerPressed:(UIButton *)sender {
+    [self registerWithUsername:self.username.text Password:self.password.text Phone:self.phone.text];
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -70,15 +65,15 @@
 }
 
 #pragma mark - textfield delegate methods
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    
     [textField resignFirstResponder];
     
     if (textField == self.username) {
         [self.password becomeFirstResponder];
+    } else if (textField == self.password) {
+        [self.phone becomeFirstResponder];
     } else {
-//        [self loginWithUsername:self.username.text Password:self.password.text];
+        [self registerWithUsername:self.username.text Password:self.password.text Phone:self.phone.text];
     }
     
     return YES;
