@@ -43,7 +43,7 @@
 }
 
 - (BOOL)registerWithUsername:(NSString*)username Password:(NSString*)password Phone:(NSString*)phone {
-    [[[UIAlertView alloc] initWithTitle:@"Can't Register" message:@"Feature isn't availible yet" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
+    [[[UIAlertView alloc] initWithTitle:@"Can't Register" message:@"Feature isn't available yet" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
     
     return NO;
 }

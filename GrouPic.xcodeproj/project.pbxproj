@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21CA92E19C4B5810028D889 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = E21CA92D19C4B5810028D889 /* Group.m */; };
+		E245E26419C8EE9800C7C381 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E245E26319C8EE9800C7C381 /* AssetsLibrary.framework */; };
+		E245E26A19C8F97800C7C381 /* GROPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E245E26919C8F97800C7C381 /* GROPhotoCollectionViewController.m */; };
+		E245E26D19C8FB2100C7C381 /* GROPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E245E26C19C8FB2100C7C381 /* GROPhotoCell.m */; };
+		E245E27019C8FF7400C7C381 /* GROImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = E245E26F19C8FF7400C7C381 /* GROImageViewer.m */; };
 		E25BBEBD19BE7F0E001D04EC /* GROLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BBEBC19BE7F0E001D04EC /* GROLoginViewController.m */; };
 		E25BBEC119BE87DE001D04EC /* GROMyGroupsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BBEC019BE87DE001D04EC /* GROMyGroupsTableViewController.m */; };
 		E25BBEC919BE934D001D04EC /* GRORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25BBEC819BE934D001D04EC /* GRORootViewController.m */; };
+		E2703F2619C11A5E005C59A5 /* GROGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2703F2519C11A5E005C59A5 /* GROGroupViewController.m */; };
 		E2ECC36519BB91C10058F41A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2ECC36419BB91C10058F41A /* Foundation.framework */; };
 		E2ECC36719BB91C10058F41A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2ECC36619BB91C10058F41A /* CoreGraphics.framework */; };
 		E2ECC36919BB91C10058F41A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2ECC36819BB91C10058F41A /* UIKit.framework */; };
@@ -24,6 +30,7 @@
 		E2ECC38E19BB91C10058F41A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2ECC38C19BB91C10058F41A /* InfoPlist.strings */; };
 		E2ECC39019BB91C10058F41A /* GrouPicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2ECC38F19BB91C10058F41A /* GrouPicTests.m */; };
 		E2FCE82F19BFE91100A1949F /* GRORegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCE82E19BFE91100A1949F /* GRORegisterViewController.m */; };
+		E2FCE83219BFF04300A1949F /* GROGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FCE83119BFF04300A1949F /* GROGroupTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +44,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E21CA92C19C4B5810028D889 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		E21CA92D19C4B5810028D889 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		E245E26319C8EE9800C7C381 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		E245E26819C8F97800C7C381 /* GROPhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GROPhotoCollectionViewController.h; path = ../GROPhotoCollectionViewController.h; sourceTree = "<group>"; };
+		E245E26919C8F97800C7C381 /* GROPhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GROPhotoCollectionViewController.m; path = ../GROPhotoCollectionViewController.m; sourceTree = "<group>"; };
+		E245E26B19C8FB2100C7C381 /* GROPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GROPhotoCell.h; path = ../GROPhotoCell.h; sourceTree = "<group>"; };
+		E245E26C19C8FB2100C7C381 /* GROPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GROPhotoCell.m; path = ../GROPhotoCell.m; sourceTree = "<group>"; };
+		E245E26E19C8FF7400C7C381 /* GROImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GROImageViewer.h; sourceTree = "<group>"; };
+		E245E26F19C8FF7400C7C381 /* GROImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GROImageViewer.m; sourceTree = "<group>"; };
 		E25BBEBB19BE7F0E001D04EC /* GROLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GROLoginViewController.h; path = ../GROLoginViewController.h; sourceTree = "<group>"; };
 		E25BBEBC19BE7F0E001D04EC /* GROLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GROLoginViewController.m; path = ../GROLoginViewController.m; sourceTree = "<group>"; };
 		E25BBEBF19BE87DE001D04EC /* GROMyGroupsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GROMyGroupsTableViewController.h; path = ../GROMyGroupsTableViewController.h; sourceTree = "<group>"; };
 		E25BBEC019BE87DE001D04EC /* GROMyGroupsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GROMyGroupsTableViewController.m; path = ../GROMyGroupsTableViewController.m; sourceTree = "<group>"; };
 		E25BBEC719BE934D001D04EC /* GRORootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRORootViewController.h; sourceTree = "<group>"; };
 		E25BBEC819BE934D001D04EC /* GRORootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRORootViewController.m; sourceTree = "<group>"; };
+		E2703F2419C11A5E005C59A5 /* GROGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GROGroupViewController.h; path = ../GROGroupViewController.h; sourceTree = "<group>"; };
+		E2703F2519C11A5E005C59A5 /* GROGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GROGroupViewController.m; path = ../GROGroupViewController.m; sourceTree = "<group>"; };
 		E2ECC36119BB91C10058F41A /* GrouPic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrouPic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2ECC36419BB91C10058F41A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E2ECC36619BB91C10058F41A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +80,8 @@
 		E2ECC38F19BB91C10058F41A /* GrouPicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrouPicTests.m; sourceTree = "<group>"; };
 		E2FCE82D19BFE91100A1949F /* GRORegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRORegisterViewController.h; sourceTree = "<group>"; };
 		E2FCE82E19BFE91100A1949F /* GRORegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRORegisterViewController.m; sourceTree = "<group>"; };
+		E2FCE83019BFF04300A1949F /* GROGroupTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GROGroupTableViewCell.h; sourceTree = "<group>"; };
+		E2FCE83119BFF04300A1949F /* GROGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GROGroupTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E245E26419C8EE9800C7C381 /* AssetsLibrary.framework in Frameworks */,
 				E2ECC36719BB91C10058F41A /* CoreGraphics.framework in Frameworks */,
 				E2ECC36919BB91C10058F41A /* UIKit.framework in Frameworks */,
 				E2ECC36519BB91C10058F41A /* Foundation.framework in Frameworks */,
@@ -88,9 +109,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E21CA92F19C4B5870028D889 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E21CA92C19C4B5810028D889 /* Group.h */,
+				E21CA92D19C4B5810028D889 /* Group.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		E25BBEBE19BE7F7A001D04EC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E245E26E19C8FF7400C7C381 /* GROImageViewer.h */,
+				E245E26F19C8FF7400C7C381 /* GROImageViewer.m */,
+				E245E26819C8F97800C7C381 /* GROPhotoCollectionViewController.h */,
+				E245E26919C8F97800C7C381 /* GROPhotoCollectionViewController.m */,
+				E2703F2419C11A5E005C59A5 /* GROGroupViewController.h */,
+				E2703F2519C11A5E005C59A5 /* GROGroupViewController.m */,
+				E2FCE83019BFF04300A1949F /* GROGroupTableViewCell.h */,
+				E2FCE83119BFF04300A1949F /* GROGroupTableViewCell.m */,
 				E25BBEBF19BE87DE001D04EC /* GROMyGroupsTableViewController.h */,
 				E25BBEC019BE87DE001D04EC /* GROMyGroupsTableViewController.m */,
 				E25BBEBB19BE7F0E001D04EC /* GROLoginViewController.h */,
@@ -125,6 +163,7 @@
 		E2ECC36319BB91C10058F41A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E245E26319C8EE9800C7C381 /* AssetsLibrary.framework */,
 				E2ECC36419BB91C10058F41A /* Foundation.framework */,
 				E2ECC36619BB91C10058F41A /* CoreGraphics.framework */,
 				E2ECC36819BB91C10058F41A /* UIKit.framework */,
@@ -136,6 +175,9 @@
 		E2ECC36A19BB91C10058F41A /* GrouPic */ = {
 			isa = PBXGroup;
 			children = (
+				E245E26B19C8FB2100C7C381 /* GROPhotoCell.h */,
+				E245E26C19C8FB2100C7C381 /* GROPhotoCell.m */,
+				E21CA92F19C4B5870028D889 /* Models */,
 				E25BBEBE19BE7F7A001D04EC /* Controllers */,
 				E2ECC37319BB91C10058F41A /* GROAppDelegate.h */,
 				E2ECC37419BB91C10058F41A /* GROAppDelegate.m */,
@@ -275,10 +317,16 @@
 			files = (
 				E2FCE82F19BFE91100A1949F /* GRORegisterViewController.m in Sources */,
 				E25BBEC919BE934D001D04EC /* GRORootViewController.m in Sources */,
+				E2FCE83219BFF04300A1949F /* GROGroupTableViewCell.m in Sources */,
 				E25BBEC119BE87DE001D04EC /* GROMyGroupsTableViewController.m in Sources */,
 				E25BBEBD19BE7F0E001D04EC /* GROLoginViewController.m in Sources */,
 				E2ECC37119BB91C10058F41A /* main.m in Sources */,
+				E245E26A19C8F97800C7C381 /* GROPhotoCollectionViewController.m in Sources */,
+				E21CA92E19C4B5810028D889 /* Group.m in Sources */,
+				E245E27019C8FF7400C7C381 /* GROImageViewer.m in Sources */,
 				E2ECC37519BB91C10058F41A /* GROAppDelegate.m in Sources */,
+				E2703F2619C11A5E005C59A5 /* GROGroupViewController.m in Sources */,
+				E245E26D19C8FB2100C7C381 /* GROPhotoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +455,7 @@
 				GCC_PREFIX_HEADER = "GrouPic/GrouPic-Prefix.pch";
 				INFOPLIST_FILE = "GrouPic/GrouPic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8217693f-3fad-4fda-9cdc-2e04c2393cfb";
+				PROVISIONING_PROFILE = "400cd2fd-d36a-40b9-849c-3ad9c4224322";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -421,7 +469,7 @@
 				GCC_PREFIX_HEADER = "GrouPic/GrouPic-Prefix.pch";
 				INFOPLIST_FILE = "GrouPic/GrouPic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8217693f-3fad-4fda-9cdc-2e04c2393cfb";
+				PROVISIONING_PROFILE = "400cd2fd-d36a-40b9-849c-3ad9c4224322";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
